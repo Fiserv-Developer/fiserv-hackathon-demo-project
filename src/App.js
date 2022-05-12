@@ -56,11 +56,17 @@ function App() {
 function Logo(props) {
   if (props.theme === 'dark') {
     return (
-      <img alt="Dark Theme Logo" src={LogoDark} />
+      <React.Fragment>
+        <img alt="Dark Theme Logo" src={LogoDark} />
+        <img style={{display: 'none'}} alt="Light Theme Logo" src={LogoLight} />
+      </React.Fragment>
     );
   } else {
     return (
-      <img alt="Light Theme Logo" src={LogoLight} />
+      <React.Fragment>
+        <img style={{display: 'none'}} alt="Light Theme Logo" src={LogoDark} />
+        <img alt="Light Theme Logo" src={LogoLight} />
+      </React.Fragment>
     );
   }
 }
