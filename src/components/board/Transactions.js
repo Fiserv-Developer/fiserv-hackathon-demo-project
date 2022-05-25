@@ -11,7 +11,7 @@ import { CreditCard, PhoneAndroid, AccountBalanceWallet } from "@mui/icons-mater
 import Placeholder from '../Placeholder';
 
 export default function Transactions(props) {
-  const baseUrl = 'https://test.emea.api.fiservapps.com/sandbox/exp/v1';
+  const baseUrl = 'https://prod.emea.api.fiservapps.com/sandbox/exp/v1';
   const [transactions, setTransactions] = useState([]);
   
   useEffect(() => {

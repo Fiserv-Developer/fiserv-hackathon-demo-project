@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography'
 import Placeholder from '../Placeholder';
 
 export default function Authorisations(props) {
-  const baseUrl = 'https://test.emea.api.fiservapps.com/sandbox/exp/v1';
+  const baseUrl = 'https://prod.emea.api.fiservapps.com/sandbox/exp/v1';
   const [data, setData] = useState([]);
 
   useEffect(() => {

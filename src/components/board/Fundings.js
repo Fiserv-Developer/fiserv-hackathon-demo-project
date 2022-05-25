@@ -6,7 +6,7 @@ import Placeholder from '../Placeholder';
 const zero = "0.00";
 
 export default function Fundings(props) {
-  const baseUrl = 'https://test.emea.api.fiservapps.com/sandbox/exp/v1';
+  const baseUrl = 'https://prod.emea.api.fiservapps.com/sandbox/exp/v1';
   const [net, setNet] = useState(zero);
   const [transactions, setTransactions] = useState(zero);
   const [fees, setFees] = useState(zero);
